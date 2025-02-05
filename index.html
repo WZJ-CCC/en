@@ -3,103 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>教师主页 - 个人展示</title>
+    <title>Professor's Homepage - Personal Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #0056b3; /* 主题颜色 */
+            --primary-color: #0056b3; /* Primary color */
         }
         
-        /* 自定义样式 */
+        /* Custom styles */
         .profile-img { width: 200px; height: 200px; object-fit: cover; }
         .section-title { color: var(--primary-color); }
         .section-content { margin-bottom: 30px; }
     </style>
 </head>
 <body>
-    <!-- 导航栏 -->
+    <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">教师主页</a>
+            <a class="navbar-brand" href="#">Professor's Homepage</a>
         </div>
     </nav>
 
-    <!-- 自我介绍 -->
+    <!-- Self Introduction -->
     <header class="py-5 mt-5">
         <div class="container text-center">
-            <h1 class="display-4">张老师</h1>
-            <p class="lead">计算机科学与技术系 | 教授</p>
+            <h1 class="display-4">Professor Zhang</h1>
+            <p class="lead">Department of Computer Science | Professor</p>
             <p class="section-content">
-                我是张老师，专注于计算机科学领域的教学与科研工作。多年从事计算机网络、人工智能等课程的教学，并在相关领域取得了一些科研成果。
+                I am Professor Zhang, focusing on teaching and research in the field of computer science. I have been teaching courses in computer networks, artificial intelligence, and other areas, with several research achievements in these fields.
             </p>
         </div>
     </header>
 
-    <!-- 个人照片 -->
+    <!-- Profile Photo -->
     <section class="py-5 text-center">
         <div class="container">
-            <img src="your-photo.jpg" alt="张老师照片" class="profile-img rounded-circle mb-4">
+            <img src="your-photo.jpg" alt="Professor Zhang's Photo" class="profile-img rounded-circle mb-4">
         </div>
     </section>
 
-    <!-- 求学经历 -->
+    <!-- Education Background -->
     <section class="py-5 bg-light" id="education">
         <div class="container">
-            <h2 class="section-title text-center">求学经历</h2>
+            <h2 class="section-title text-center">Education Background</h2>
             <div class="row">
                 <div class="col-12">
-                    <h4>博士研究生 - 计算机科学</h4>
-                    <p class="text-muted">2010 - 2013 | XX大学</p>
-                    <p>在XX大学攻读计算机科学博士学位，主要研究方向为人工智能与机器学习。</p>
+                    <h4>Ph.D. in Computer Science</h4>
+                    <p class="text-muted">2010 - 2013 | XX University</p>
+                    <p>Studied for a Ph.D. in Computer Science at XX University, specializing in Artificial Intelligence and Machine Learning.</p>
                 </div>
                 <div class="col-12">
-                    <h4>硕士研究生 - 计算机网络</h4>
-                    <p class="text-muted">2007 - 2010 | XX大学</p>
-                    <p>攻读计算机网络专业硕士学位，重点研究网络安全和网络协议。</p>
+                    <h4>Master's in Computer Networks</h4>
+                    <p class="text-muted">2007 - 2010 | XX University</p>
+                    <p>Pursued a Master's degree in Computer Networks, focusing on network security and protocols.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 论文发表 -->
+    <!-- Published Papers -->
     <section class="py-5" id="papers">
         <div class="container">
-            <h2 class="section-title text-center">论文发表</h2>
+            <h2 class="section-title text-center">Published Papers</h2>
             <div class="row">
                 <div class="col-12">
-                    <h4>《基于深度学习的计算机网络安全研究》</h4>
-                    <p class="text-muted">发表时间：2022年 | 期刊：XX科技期刊</p>
-                    <p>本论文研究了深度学习在计算机网络安全中的应用，提出了一种新的入侵检测模型。</p>
+                    <h4>"Research on Computer Network Security Based on Deep Learning"</h4>
+                    <p class="text-muted">Published: 2022 | Journal: XX Tech Journal</p>
+                    <p>This paper explores the application of deep learning in computer network security and proposes a new intrusion detection model.</p>
                 </div>
                 <div class="col-12">
-                    <h4>《面向智能交通的机器学习算法》</h4>
-                    <p class="text-muted">发表时间：2020年 | 期刊：XX计算机期刊</p>
-                    <p>探讨了机器学习算法在智能交通系统中的应用，提出了一种新的预测算法。</p>
+                    <h4>"Machine Learning Algorithms for Intelligent Transportation"</h4>
+                    <p class="text-muted">Published: 2020 | Journal: XX Computer Journal</p>
+                    <p>Discusses the application of machine learning algorithms in intelligent transportation systems and introduces a new predictive algorithm.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 项目展示 -->
+    <!-- Projects -->
     <section class="py-5 bg-light" id="projects">
         <div class="container">
-            <h2 class="section-title text-center">研究项目</h2>
+            <h2 class="section-title text-center">Research Projects</h2>
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h5 class="card-title">智能交通系统研究</h5>
-                            <p class="card-text">本项目旨在研究如何通过机器学习提高交通系统的智能化管理能力。</p>
-                            <a href="#" class="btn btn-primary">查看详情</a>
+                            <h5 class="card-title">Intelligent Transportation System Research</h5>
+                            <p class="card-text">This project focuses on enhancing the management capabilities of transportation systems using machine learning.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h5 class="card-title">基于大数据的网络安全系统</h5>
-                            <p class="card-text">研究如何利用大数据分析技术提升网络安全防护能力，减少网络攻击的风险。</p>
-                            <a href="#" class="btn btn-primary">查看详情</a>
+                            <h5 class="card-title">Big Data-based Network Security System</h5>
+                            <p class="card-text">Research on utilizing big data analytics to enhance network security and reduce risks from cyberattacks.</p>
                         </div>
                     </div>
                 </div>
@@ -107,14 +105,14 @@
         </div>
     </section>
 
-    <!-- 页脚 -->
+    <!-- Footer -->
     <footer class="py-4 bg-dark text-white">
         <div class="container text-center">
-            <p>&copy; 2023 张老师. All rights reserved.</p>
+            <p>&copy; 2023 Professor Zhang. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- 脚本 -->
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
