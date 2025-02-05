@@ -3,89 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>教师主页 - 个人展示</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #2d5d8c; /* 主题蓝色 */
+            --primary-color: #0056b3; /* 主题颜色 */
         }
         
         /* 自定义样式 */
-        .navbar { border-bottom: 3px solid var(--primary-color); }
-        .project-card { transition: transform 0.3s; }
-        .project-card:hover { transform: translateY(-5px); }
-        .timeline-item { border-left: 2px solid var(--primary-color); }
+        .profile-img { width: 200px; height: 200px; object-fit: cover; }
+        .section-title { color: var(--primary-color); }
+        .section-content { margin-bottom: 30px; }
     </style>
 </head>
 <body>
     <!-- 导航栏 -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Your Name</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-                </ul>
-            </div>
+            <a class="navbar-brand" href="#">教师主页</a>
         </div>
     </nav>
 
-    <!-- Banner -->
+    <!-- 自我介绍 -->
     <header class="py-5 mt-5">
         <div class="container text-center">
-            <h1 class="display-4">Your Name</h1>
-            <p class="lead">Computer Science Student | Full Stack Developer</p>
+            <h1 class="display-4">张老师</h1>
+            <p class="lead">计算机科学与技术系 | 教授</p>
+            <p class="section-content">
+                我是张老师，专注于计算机科学领域的教学与科研工作。多年从事计算机网络、人工智能等课程的教学，并在相关领域取得了一些科研成果。
+            </p>
         </div>
     </header>
 
-    <!-- 项目展示 -->
-    <section id="projects" class="py-5 bg-light">
+    <!-- 个人照片 -->
+    <section class="py-5 text-center">
         <div class="container">
-            <h2 class="mb-5 text-center">Featured Projects</h2>
+            <img src="your-photo.jpg" alt="张老师照片" class="profile-img rounded-circle mb-4">
+        </div>
+    </section>
+
+    <!-- 求学经历 -->
+    <section class="py-5 bg-light" id="education">
+        <div class="container">
+            <h2 class="section-title text-center">求学经历</h2>
             <div class="row">
-                <!-- 项目卡片 -->
+                <div class="col-12">
+                    <h4>博士研究生 - 计算机科学</h4>
+                    <p class="text-muted">2010 - 2013 | XX大学</p>
+                    <p>在XX大学攻读计算机科学博士学位，主要研究方向为人工智能与机器学习。</p>
+                </div>
+                <div class="col-12">
+                    <h4>硕士研究生 - 计算机网络</h4>
+                    <p class="text-muted">2007 - 2010 | XX大学</p>
+                    <p>攻读计算机网络专业硕士学位，重点研究网络安全和网络协议。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 论文发表 -->
+    <section class="py-5" id="papers">
+        <div class="container">
+            <h2 class="section-title text-center">论文发表</h2>
+            <div class="row">
+                <div class="col-12">
+                    <h4>《基于深度学习的计算机网络安全研究》</h4>
+                    <p class="text-muted">发表时间：2022年 | 期刊：XX科技期刊</p>
+                    <p>本论文研究了深度学习在计算机网络安全中的应用，提出了一种新的入侵检测模型。</p>
+                </div>
+                <div class="col-12">
+                    <h4>《面向智能交通的机器学习算法》</h4>
+                    <p class="text-muted">发表时间：2020年 | 期刊：XX计算机期刊</p>
+                    <p>探讨了机器学习算法在智能交通系统中的应用，提出了一种新的预测算法。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 项目展示 -->
+    <section class="py-5 bg-light" id="projects">
+        <div class="container">
+            <h2 class="section-title text-center">研究项目</h2>
+            <div class="row">
                 <div class="col-md-4 mb-4">
-                    <div class="card project-card h-100">
+                    <div class="card h-100">
                         <div class="card-body">
-                            <h5 class="card-title">Project Title</h5>
-                            <p class="card-text">Project description text here.</p>
-                            <a href="#" class="btn btn-primary">View Details</a>
+                            <h5 class="card-title">智能交通系统研究</h5>
+                            <p class="card-text">本项目旨在研究如何通过机器学习提高交通系统的智能化管理能力。</p>
+                            <a href="#" class="btn btn-primary">查看详情</a>
                         </div>
                     </div>
                 </div>
-                <!-- 重复更多项目卡片 -->
-            </div>
-        </div>
-    </section>
-
-    <!-- 技能展示 -->
-    <section id="skills" class="py-5">
-        <div class="container">
-            <h2 class="mb-5 text-center">Technical Skills</h2>
-            <div class="row justify-content-center">
-                <div class="col-auto text-center m-3">
-                    <div>Python</div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">基于大数据的网络安全系统</h5>
+                            <p class="card-text">研究如何利用大数据分析技术提升网络安全防护能力，减少网络攻击的风险。</p>
+                            <a href="#" class="btn btn-primary">查看详情</a>
+                        </div>
+                    </div>
                 </div>
-                <!-- 添加更多技能 -->
-            </div>
-        </div>
-    </section>
-
-    <!-- 教育经历 -->
-    <section id="education" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="mb-5 text-center">Education</h2>
-            <div class="timeline">
-                <div class="timeline-item ps-4">
-                    <h4>University Name</h4>
-                    <p class="text-muted">2020-2024 | Bachelor of Computer Science</p>
-                </div>
-                <!-- 添加更多经历 -->
             </div>
         </div>
     </section>
@@ -93,7 +110,7 @@
     <!-- 页脚 -->
     <footer class="py-4 bg-dark text-white">
         <div class="container text-center">
-            <p>&copy; 2023 Your Name. All rights reserved.</p>
+            <p>&copy; 2023 张老师. All rights reserved.</p>
         </div>
     </footer>
 
