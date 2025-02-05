@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2d5d8c; /* 主题蓝色 */
+        }
+        
+        /* 自定义样式 */
+        .navbar { border-bottom: 3px solid var(--primary-color); }
+        .profile-img { width: 200px; height: 200px; object-fit: cover; }
+        .project-card { transition: transform 0.3s; }
+        .project-card:hover { transform: translateY(-5px); }
+        .skill-icon { width: 60px; height: 60px; }
+        .timeline-item { border-left: 2px solid var(--primary-color); }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Your Name</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <header class="py-5 mt-5">
+        <div class="container text-center">
+            <img src="your-photo.jpg" alt="Profile" class="profile-img rounded-circle mb-4">
+            <h1 class="display-4">Your Name</h1>
+            <p class="lead">Computer Science Student | Full Stack Developer</p>
+        </div>
+    </header>
+
+    <!-- 项目展示 -->
+    <section id="projects" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="mb-5 text-center">Featured Projects</h2>
+            <div class="row">
+                <!-- 项目卡片 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card project-card h-100">
+                        <img src="project1.jpg" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Project Title</h5>
+                            <p class="card-text">Project description text here.</p>
+                            <a href="#" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 重复更多项目卡片 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 技能展示 -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="mb-5 text-center">Technical Skills</h2>
+            <div class="row justify-content-center">
+                <div class="col-auto text-center m-3">
+                    <img src="python-icon.png" class="skill-icon" alt="Python">
+                    <div>Python</div>
+                </div>
+                <!-- 添加更多技能图标 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 教育经历 -->
+    <section id="education" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="mb-5 text-center">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item ps-4">
+                    <h4>University Name</h4>
+                    <p class="text-muted">2020-2024 | Bachelor of Computer Science</p>
+                </div>
+                <!-- 添加更多经历 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="py-4 bg-dark text-white">
+        <div class="container text-center">
+            <div class="mb-3">
+                <a href="https://github.com/yourusername" class="text-white mx-3"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/yourusername" class="text-white mx-3"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p>&copy; 2023 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- 脚本 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+</body>
+</html>
